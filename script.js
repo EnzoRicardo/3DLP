@@ -4,7 +4,7 @@ import { RGBELoader } from "https://cdn.skypack.dev/three@0.132.2/examples/jsm/l
 
 // Cena
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x191919); 
+
 
 // Camera
 const camera = new THREE.PerspectiveCamera(
@@ -63,7 +63,7 @@ function animate() {
     requestAnimationFrame(animate);
 
     if (car) {
-        car.rotation.y += 0.0025;
+        car.rotation.y += 0.0070;
     }
 
     renderer.render(scene, camera);
